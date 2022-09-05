@@ -1,6 +1,6 @@
-::root {
+:root {
   --dark-color: rgb(59, 59, 59);
-  --alt-color: rgb(46, 138, 87);  
+  --alt-color: rgb(46, 138, 87);
 }
 
 *, ::before, ::after {
@@ -12,11 +12,7 @@
 html {
   background-color: #fff;
   color:  rgb(59, 59, 59);
-  font-family: sans-serif;
-}
-
-body {
-  margin: 10px 20px 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -27,6 +23,28 @@ a {
 
 a:hover {
   border-bottom: 3px solid rgb(78, 78, 78);
+}
+
+h1, h2, h3 {
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+header {
+  width: 98%;
+  margin: 15px auto;
+  text-transform: uppercase;
 }
 
 header img {
@@ -69,11 +87,22 @@ ul {
 
 li {
   margin: 0 5%;
-  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 .header a {
   display: block;
+}
+
+.features, .waitlist {
+  width: 100%;
+  background-color: rgb(46, 138, 87);
+  color: whitesmoke;
+}
+
+.features, .waitlist, .demo {
+  width: 100%;
+  padding: 2.5% 5%;
 }
 
 .feature-container {
@@ -100,12 +129,13 @@ li {
 
 .feature-desc h3 {
   font-size: 1.8em;
+  color: rgb(192, 228, 208);
 }
 
 .feature-desc p {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin: 5px 0 0 2px;
 }
-
 
 #features ol {
   list-style-type: none;
@@ -113,6 +143,37 @@ li {
 
 #features img {
   object-fit: cover;
-  border: 5px solid black;
-  background: black;
+  border: 5px solid whitesmoke;
+  background: whitesmoke;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto 10px;
+}
+
+.form {
+  text-align: center;
+}
+
+input {
+  font-size: 1.3em;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: none;
+  margin: 2px;
+}
+
+#email {
+  width: 350px;
+}
+
+#submit {
+  background-color: rgb(121, 175, 145);
+  padding: 10px 15px;
+  border: none;
+}
+
+.waitlist {
+  padding-bottom: 50px;
 }
