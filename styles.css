@@ -1,11 +1,17 @@
 *, ::before, ::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   background-color: rgb(13, 32, 68);
   color:  whitesmoke;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 20px 20px;
 }
 
 a {
@@ -16,3 +22,44 @@ a {
 a:hover {
   border-bottom: 3px solid white;
 }
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin: 20px 10px;
+}
+
+.feature-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(85% - 220px);
+  margin: 0 10px;
+}
+
+.feature-desc h3 {
+  font-size: 1.8em;
+}
+
+.feature-desc p {
+  font-size: 1.3em;
+}
+
+
+#features ol {
+  list-style-type: none;
+}
+
+li img {
+  object-fit: cover;
+  border: 5px solid whitesmoke;
+}
+
