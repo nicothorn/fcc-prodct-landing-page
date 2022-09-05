@@ -5,8 +5,8 @@
 }
 
 html {
-  background-color: rgb(13, 32, 68);
-  color:  whitesmoke;
+  background-color: whitesmoke;
+  color:  rgb(59, 59, 59);
   font-family: sans-serif;
 }
 
@@ -15,12 +15,13 @@ body {
 }
 
 a {
-  color: goldenrod;
+  color: rgb(46, 138, 87);
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(78, 78, 78);
 }
 
 .feature-container {
@@ -33,8 +34,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 200px;
   margin: 20px 10px;
+  line-height: 0;
 }
 
 .feature-desc {
@@ -58,8 +59,8 @@ a:hover {
   list-style-type: none;
 }
 
-li img {
+#features img {
   object-fit: cover;
-  border: 5px solid whitesmoke;
+  border: 5px solid black;
+  background: black;
 }
-
