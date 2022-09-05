@@ -1,3 +1,8 @@
+::root {
+  --dark-color: rgb(59, 59, 59);
+  --alt-color: rgb(46, 138, 87);  
+}
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -5,13 +10,13 @@
 }
 
 html {
-  background-color: whitesmoke;
+  background-color: #fff;
   color:  rgb(59, 59, 59);
   font-family: sans-serif;
 }
 
 body {
-  margin: 0 20px 20px;
+  margin: 10px 20px 20px;
 }
 
 a {
@@ -22,6 +27,53 @@ a {
 
 a:hover {
   border-bottom: 3px solid rgb(78, 78, 78);
+}
+
+header img {
+  border: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: left;
+}
+
+.title {
+  margin-left: 1em;
+}
+
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: stretch;
+  flex: 0 1 auto;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: right;
+}
+
+li {
+  margin: 0 5%;
+  text-transform: uppercase;
+}
+
+.header a {
+  display: block;
 }
 
 .feature-container {
