@@ -137,7 +137,9 @@ li {
 }
 
 #features img {
-  object-fit: cover;.5
+  object-fit: cover;
+  background-color: whitesmoke;
+  border: 5px solid whitesmoke;
 }
 
 .form {
